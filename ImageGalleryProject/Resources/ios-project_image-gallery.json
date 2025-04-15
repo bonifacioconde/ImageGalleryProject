@@ -1,0 +1,1302 @@
+{
+  "accessControl": {
+    "availability": "open"
+  },
+  "createdBy": {
+    "email": "shanninc@gmail.com",
+    "name": "Shannin Ciprich",
+    "uid": "hR4RZhRwxTX04Stcc7MhzA5SCoz2"
+  },
+  "createdOn": 1721070166032,
+  "id": "by4c85734yb93487nc54c53",
+  "lastUpdated": 1743610213188,
+  "lastUpdatedBy": {
+    "email": "shanninc@gmail.com",
+    "name": "Shannin Ciprich",
+    "uid": "hR4RZhRwxTX04Stcc7MhzA5SCoz2"
+  },
+  "preserveOffline": false,
+  "projectSchemaVersion": "4.0",
+  "sections": [
+    {
+      "label": "Header Banner",
+      "lastUpdated": 1711062909341,
+      "lastUpdatedBy": {
+        "email": "shanninc@gmail.com",
+        "name": "Shannin Ciprich",
+        "uid": "hR4RZhRwxTX04Stcc7MhzA5SCoz2"
+      },
+      "onTap": {
+        "accessControl": {
+          "availability": "open",
+          "noAccessMessage": "You do not have access to this content."
+        },
+        "action": "none",
+        "presentation": "modal"
+      },
+      "sectionId": "WTRuyE31pqMr",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "https://firebasestorage.googleapis.com/v0/b/clas-demo-2.appspot.com/o/imageGallery%2FCvlhhm?alt=media&token=29f3e7c2-ea83-4e8f-97ca-e67b843eca6c",
+        "bottomLabelText": "Build a CollectionView",
+        "cellHeight": 280,
+        "bottomLabelStyles": {
+          "bold": true,
+          "color": "#FFFFFF",
+          "italic": true,
+          "size": 2,
+          "underline": true,
+          "vAlign": "bottom"
+        },
+        "centerLabelText": "",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "color": "#000000",
+          "size": 1
+        },
+        "topLabelText": "",
+        "useDefault": false
+      },
+      "tags": ""
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "nZKGPBtR",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#231084",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 2,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "KBza99vm",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 72,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "We need a CollectionView that behaves similar to what a TableView does, meaning that each row is one singular cell. These cells are custom and defined in json.",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "WG5DLsni",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 90,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "The provided json file is for a \"Project.\" You will see the key \"sections\" that outlines the individual sections, or cells, that will make up the view. If interpreted properly, the provided json will produce a CollectionView that is identical to these instructions.",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "bzVhL4Nn",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#231084",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 5,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "WosnNuTF",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": -16,
+        "centerLabelStyles": {
+          "bold": true,
+          "color": "#000000",
+          "italic": false,
+          "size": 1.1,
+          "textAlign": "left",
+          "underline": true,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "Cell Layouts",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "1aT96YMl",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 25,
+        "centerLabelStyles": {
+          "bold": true,
+          "color": "#000000",
+          "italic": false,
+          "size": 1.1,
+          "textAlign": "left",
+          "underline": true,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "Cell Layout",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "xMCJRk3s",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 95,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "For this first pass a TableCell will have three layouts:\nOneLine, TwoLine, ThreeLine\n\nThis dictates if there is one, two, or three equally spaced labels vertically placed in the cell, filling the width.",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "YXkWGneq",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 50,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": true,
+          "size": 0.8,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "These TableCells should be built in a way that is extendable. For example, a custom left detail, custom right detail, other layouts etc. will eventually need to be implemented as part of the TableCell",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "WSyEnesF",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 25,
+        "centerLabelStyles": {
+          "bold": true,
+          "color": "#000000",
+          "italic": false,
+          "size": 1.1,
+          "textAlign": "left",
+          "underline": true,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": true,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": true,
+          "vAlign": "middle"
+        },
+        "topLabelText": "Cell Sizes"
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "RlcWhpsK",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 110,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "Cells should scale to maintain text sizes, proportions, etc. These calculations are based on a width of 375. So if a cell is given a height of 100, it would be 100x375. If the actual screen width is 750px, the height would be scaled up to 200px. As such, label dimensions, font sizes should also be scaled. In the same scenario, the font would 2x.",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "fgB70w71",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 25,
+        "centerLabelStyles": {
+          "bold": true,
+          "color": "#000000",
+          "italic": false,
+          "size": 1.1,
+          "textAlign": "left",
+          "underline": true,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "Background Images",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "wbBawXQh",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 60,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "Background images should always be scaled to fill the cell. There should never be stripes where you can see the background color along the top or along the sides.",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "4mUxM4qc",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 25,
+        "centerLabelStyles": {
+          "bold": true,
+          "color": "#000000",
+          "italic": false,
+          "size": 1.1,
+          "textAlign": "left",
+          "underline": true,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "Labels",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "ZDk7pDsW",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 60,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "A label should also be its own view element, and implemented in a way so that it can be used in other higher order views throughout our layout engine.",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "80UeE9PZ",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 25,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "Each label can be bold, italic, underlined",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "1moLNEa3",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 95,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "Labels can be set left, center, right, as well as aligned to the top (so text starts at the top of the label box and flows down), middle (so text stays vertically centered within its box (default UILabel behavior), or bottom (so text aligns to the bottom of the box, and flows up)",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "Suqn3A54",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 110,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "Font size is based on a couple factors, first being a scale factor provided in the json (1, 1.5, 2, etc.). Then, the font should be scaled again based on the device screen size (like described above in cell styles). If the font size in the cell styles is -1, the label content should scale to fit the width of the label, based on the widest line in the text.",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "A0JvVB1G",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#231084",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 5,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "vhfmNKWW",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "right",
+          "underline": true,
+          "vAlign": "bottom"
+        },
+        "bottomLabelText": "This is the bottom line",
+        "cellHeight": 150,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": true,
+          "size": 1,
+          "textAlign": "center",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "This is the center line",
+        "layout": "ThreeLine",
+        "topLabelStyles": {
+          "bold": true,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "top"
+        },
+        "topLabelText": "This is the top line"
+      }
+    },
+    {
+      "onTap": {
+        "accessControl": {
+          "availability": "open",
+          "noAccessMessage": "You do not have access to this content."
+        },
+        "action": "none",
+        "presentation": "modal"
+      },
+      "sectionId": "wMDdaL9O",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#EBE7FF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "center",
+          "underline": false,
+          "vAlign": "top"
+        },
+        "bottomLabelText": "and this label is top aligned. This label should also wrap three lines. The label above fits to the width of its cell and is also bold and italic.",
+        "cellHeight": 150,
+        "centerLabelStyles": {
+          "bold": true,
+          "color": "#3514DC",
+          "italic": false,
+          "size": 2,
+          "textAlign": "left",
+          "underline": true,
+          "vAlign": "top"
+        },
+        "centerLabelText": "",
+        "layout": "TwoLine",
+        "topLabelStyles": {
+          "bold": true,
+          "color": "#000000",
+          "italic": true,
+          "size": -1,
+          "textAlign": "center",
+          "underline": false,
+          "vAlign": "bottom"
+        },
+        "topLabelText": "This cell should have two labels with this one being bottom aligned"
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "dbE0v3T5",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#3514DC",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 72,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#FFFFFF",
+          "italic": false,
+          "size": -1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "This cell should have text that fits the width of the view but only on one line and is kinda long",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "wyJGtmji",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#231084",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 72,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#EBE7FF",
+          "italic": false,
+          "size": -1,
+          "textAlign": "center",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "This cell should have text that fits the width\nbut is on two lines and centered",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "ge9KxZAz",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 10,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "m6OJNrab",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "https://firebasestorage.googleapis.com/v0/b/clas-demo-2.appspot.com/o/imageGallery%2FskINZY?alt=media&token=a18257c9-820f-457a-b563-8afdacdacddf",
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "Beyond TableCells",
+        "cellHeight": 100,
+        "bottomLabelStyles": {
+          "bold": true,
+          "color": "#FFFFFF",
+          "italic": true,
+          "size": 1.5,
+          "textAlign": "left",
+          "underline": true,
+          "vAlign": "bottom"
+        },
+        "centerLabelText": "",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": "",
+        "useDefault": false
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "Edyc0Fzj",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#231084",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 2,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "GO1iAwRe",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#D96166",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 40,
+        "centerLabelStyles": {
+          "bold": true,
+          "color": "#FFFFFF",
+          "italic": false,
+          "size": -1,
+          "textAlign": "center",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "The CollectionView should be built in a way that is extendable.",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "onTap": {
+        "action": "none"
+      },
+      "sectionId": "fN9cta2b",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 100,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "centerLabelText": "Everything up to this section has been a \"TableCell\" but there could be other cells or section types as well. For example, a section could be a horizontal scroll \"card carousel,\" an image gallery, a media player or a map. The possibilities are endless!",
+        "layout": "OneLine",
+        "topLabelStyles": {
+          "bold": false,
+          "color": "#000000",
+          "italic": false,
+          "size": 1,
+          "textAlign": "left",
+          "underline": false,
+          "vAlign": "middle"
+        },
+        "topLabelText": ""
+      }
+    },
+    {
+      "label": "Image Gallery Info",
+      "lastUpdated": 1711062909341,
+      "lastUpdatedBy": {
+        "email": "shanninc@gmail.com",
+        "name": "Shannin Ciprich",
+        "uid": "hR4RZhRwxTX04Stcc7MhzA5SCoz2"
+      },
+      "onTap": {
+        "accessControl": {
+          "availability": "open",
+          "noAccessMessage": "You do not have access to this content."
+        },
+        "action": "none",
+        "presentation": "modal"
+      },
+      "sectionId": "hQ02jJdRBrm4",
+      "sectionType": "TableCell",
+      "styles": {
+        "backgroundColor": "#FBF0F1",
+        "backgroundImageUrl": "",
+        "bottomLabelStyles": {
+          "color": "#000000",
+          "size": 1,
+          "vAlign": "top"
+        },
+        "bottomLabelText": "",
+        "cellHeight": 140,
+        "centerLabelStyles": {
+          "bold": false,
+          "color": "#231084",
+          "italic": false,
+          "size": 1,
+          "textAlign": "center",
+          "underline": false,
+          "vAlign": "top"
+        },
+        "centerLabelText": "Below is a gallery feature that will include 10 images. Along the left side there will be a scrollable list of images. When the person taps on one of the small square, it enlages to the space on the left.",
+        "layout": "ThreeLine",
+        "rightDetail": "none",
+        "showIcon": false,
+        "topLabelStyles": {
+          "bold": true,
+          "color": "#86337C",
+          "size": 1.5,
+          "textAlign": "center",
+          "vAlign": "middle"
+        },
+        "topLabelText": "Image Gallery"
+      },
+      "tags": ""
+    },
+    {
+      "sectionId": "i6hturIT",
+      "sectionType": "ImageGallery",
+      "styles": {
+        "backgroundColor": "#FFFFFF",
+        "cellHeight": 250
+      },
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/clas-demo-2.appspot.com/o/imageGallery%2FxI4mBB?alt=media&token=8d79c098-3f87-4123-b3d3-b2ecd7de2302",
+        "https://firebasestorage.googleapis.com/v0/b/clas-demo-2.appspot.com/o/imageGallery%2FskINZY?alt=media&token=a18257c9-820f-457a-b563-8afdacdacddf",
+        "https://firebasestorage.googleapis.com/v0/b/clas-demo-2.appspot.com/o/imageGallery%2Fj4TpEX?alt=media&token=7e77be98-0632-447b-b422-4fb925e4e644",
+        "https://firebasestorage.googleapis.com/v0/b/clas-demo-2.appspot.com/o/imageGallery%2F8X2yyR?alt=media&token=79fe87fe-0d8f-4132-bf1a-2f1cc97eb84f",
+        "https://firebasestorage.googleapis.com/v0/b/clas-demo-2.appspot.com/o/imageGallery%2FJ2f0tA?alt=media&token=52c56108-33ed-46b8-b09e-f2c81c105346",
+        "https://firebasestorage.googleapis.com/v0/b/clas-app-97be0.appspot.com/o/imageGallery%2FLNHTvm?alt=media&token=c74ddadb-4833-4c90-aaf9-6568debed4e2",
+        "https://firebasestorage.googleapis.com/v0/b/clas-app-97be0.appspot.com/o/imageGallery%2FYA3ln4?alt=media&token=7eaa7115-f77b-438b-8441-826e8c244d2c",
+        "https://firebasestorage.googleapis.com/v0/b/clas-app-97be0.appspot.com/o/imageGallery%2F43VFrA?alt=media&token=60334210-8ec1-4ec2-9b00-472f06abc700"
+      ]
+    }
+  ],
+  "title": "iOS Project - Image Gallery"
+}
