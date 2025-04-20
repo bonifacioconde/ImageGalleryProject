@@ -12,9 +12,7 @@ final class CustomCollectionCell: UICollectionViewCell {
   static let identifier = "CustomCollectionCell"
   
   @IBOutlet private(set) var backgroundImageView: UIImageView!
-  @IBOutlet private(set) var topLabel: UILabel!
-  @IBOutlet private(set) var centerLabel: UILabel!
-  @IBOutlet private(set) var bottomLabel: UILabel!
+  private var styledLabel: StyledLabel?
   
   var viewModel: SectionViewModel! {
     didSet {
@@ -41,16 +39,31 @@ private extension CustomCollectionCell {
   }
   
   func refreshLabel() {
-    guard viewModel.height > 10 else {
-      topLabel.text = ""
-      centerLabel.text = ""
-      bottomLabel.text = ""
-      return
-    }
+    styledLabel?.removeFromSuperview()
+    guard viewModel.height > 10 else { return }
 
-    topLabel.attributedText = viewModel.topAttributedText
-    centerLabel.attributedText = viewModel.centerAttributedText
-    bottomLabel.attributedText = viewModel.bottomAttributedText
+    styledLabel = StyledLabel(
+      text: viewModel.contentText ?? "",
+      style: viewModel.contentLabelStyle,
+      layout: viewModel.section.styles?.layout
+    )
+
+    if let label = styledLabel {
+      contentView.addSubview(label)
+      NSLayoutConstraint.activate([
+        label.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
+        label.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
+      ])
+      
+      switch viewModel.section.styles?.bottomLabelStyles?.vAlign?.lowercased() {
+      case "top":
+        label.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8).isActive = true
+      case "bottom":
+        label.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8).isActive = true
+      default:
+        label.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+      }
+    }
   }
 }
 

@@ -19,7 +19,6 @@ struct SectionViewModel {
 private extension SectionViewModel {
   var topText: String? { section.styles?.topLabelText }
   var centerText: String? { section.styles?.centerLabelText }
-  var bottomText: String? { section.styles?.bottomLabelText }
   
   var topAlignment: NSTextAlignment {
     alignmentFromString(section.styles?.topLabelStyles?.textAlign)
@@ -77,19 +76,26 @@ private extension SectionViewModel {
 
 private extension SectionViewModel {
   func generateFont(from style: LabelStyle?) -> UIFont {
-    let size = CGFloat((style?.size ?? 1) * 13) //* scaleFactor
-    var font = UIFont.systemFont(ofSize: size)
-    var descriptor = UIFont.systemFont(ofSize: size).fontDescriptor
-    descriptor = descriptor.withSymbolicTraits([.traitBold, .traitItalic]) ?? descriptor
-    
-    if style?.bold == true && style?.italic == true {
-      font = UIFont(descriptor: descriptor, size: size)
-    } else if style?.bold == true {
-      font = UIFont.boldSystemFont(ofSize: size)
-    } else if style?.italic == true {
-      font = UIFont.italicSystemFont(ofSize: size)
+    let size = CGFloat((style?.size ?? 1) * 14)
+    let baseDescriptor = UIFont.systemFont(ofSize: size).fontDescriptor
+    var traits: UIFontDescriptor.SymbolicTraits = []
+
+    if style?.bold == true {
+      traits.insert(.traitBold)
     }
-    return font
+    if style?.italic == true {
+      traits.insert(.traitItalic)
+    }
+
+    if let newDescriptor = baseDescriptor.withSymbolicTraits(traits) {
+      return UIFont(descriptor: newDescriptor, size: size)
+    } else if style?.bold == true {
+      return UIFont.systemFont(ofSize: size, weight: .black)
+    } else if style?.italic == true {
+      return UIFont.italicSystemFont(ofSize: size)
+    } else {
+      return UIFont.systemFont(ofSize: size)
+    }
   }
   
   func hexToColor(_ hex: String?) -> UIColor {
@@ -112,6 +118,15 @@ private extension SectionViewModel {
     case "justified": return .justified
     case "natural": return .natural
     default: return .natural
+    }
+  }
+  
+  func numLineFromString(_ string: String?) -> Int {
+    switch string?.lowercased() {
+    case "oneline": return 1
+    case "twoline": return 2
+    case "threeline": return 3
+    default: return 0
     }
   }
 
@@ -185,7 +200,33 @@ extension SectionViewModel {
   
   var bottomAttributedText: NSAttributedString? {
     NSAttributedString(
-      string: bottomText ?? "",
+      string: contentText ?? "",
       attributes: bottomAttributes)
+  }
+  
+  var numberOfLines: Int {
+    numLineFromString(section.styles?.layout)
+  }
+  
+  var contentText: String? {
+    if section.styles?.topLabelText?.isEmpty == false {
+      return section.styles?.topLabelText
+    } else if section.styles?.centerLabelText?.isEmpty == false {
+      return section.styles?.centerLabelText
+    } else if section.styles?.bottomLabelText?.isEmpty == false {
+      return section.styles?.bottomLabelText
+    }
+    return ""
+  }
+  
+  var contentLabelStyle: LabelStyle? {
+    if section.styles?.topLabelText?.isEmpty == false {
+      return section.styles?.topLabelStyles
+    } else if section.styles?.centerLabelText?.isEmpty == false {
+      return section.styles?.centerLabelStyles
+    } else if section.styles?.bottomLabelText?.isEmpty == false {
+      return section.styles?.bottomLabelStyles
+    }
+    return nil
   }
 }
