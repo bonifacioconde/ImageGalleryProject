@@ -32,6 +32,7 @@ final class ImageGalleryCell: UICollectionViewCell {
 private extension ImageGalleryCell {
   func setup() {
     thumbnailsCollectionView.contentInsetAdjustmentBehavior = .never
+    thumbnailsCollectionView.delegate = self
     
     thumbnailsCollectionView.register(
       UINib(nibName: ThumbnailCell.identifier, bundle: nil),
@@ -76,6 +77,17 @@ extension ImageGalleryCell: UICollectionViewDataSource {
     }
     cell.viewModel = ThumbnailCellViewModel(urlString: viewModel.images[indexPath.item])
     return cell
+  }
+}
+
+extension ImageGalleryCell: UICollectionViewDelegateFlowLayout {
+  func collectionView(
+    _ collectionView: UICollectionView,
+    layout collectionViewLayout: UICollectionViewLayout,
+    sizeForItemAt indexPath: IndexPath
+  ) -> CGSize {
+    let height = collectionView.bounds.height
+    return CGSize(width: height, height: height / 3)
   }
 }
 

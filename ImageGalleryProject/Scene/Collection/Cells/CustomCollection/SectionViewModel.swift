@@ -77,19 +77,17 @@ private extension SectionViewModel {
 
 private extension SectionViewModel {
   func generateFont(from style: LabelStyle?) -> UIFont {
-    let size = CGFloat((style?.size ?? 1) * 13) //* scaleFactor
-    var font = UIFont.systemFont(ofSize: size)
-    var descriptor = UIFont.systemFont(ofSize: size).fontDescriptor
-    descriptor = descriptor.withSymbolicTraits([.traitBold, .traitItalic]) ?? descriptor
-    
+    let size = CGFloat((style?.size ?? 1) * 13)
+
     if style?.bold == true && style?.italic == true {
-      font = UIFont(descriptor: descriptor, size: size)
+      return UIFont(name: "Roboto-BoldItalic", size: size)!
     } else if style?.bold == true {
-      font = UIFont.boldSystemFont(ofSize: size)
+      return UIFont.systemFont(ofSize: size, weight: .heavy)
     } else if style?.italic == true {
-      font = UIFont.italicSystemFont(ofSize: size)
+      return UIFont.italicSystemFont(ofSize: size)
+    } else {
+      return UIFont.systemFont(ofSize: size)
     }
-    return font
   }
   
   func hexToColor(_ hex: String?) -> UIColor {
@@ -132,6 +130,7 @@ private extension SectionViewModel {
 
     let paragraphStyle = NSMutableParagraphStyle()
     paragraphStyle.alignment = alignment
+    
     attributes[.paragraphStyle] = paragraphStyle
 
     return attributes
@@ -187,5 +186,9 @@ extension SectionViewModel {
     NSAttributedString(
       string: bottomText ?? "",
       attributes: bottomAttributes)
+  }
+  
+  var isAutoShrink: Bool {
+    section.styles?.centerLabelStyles?.size == -1
   }
 }

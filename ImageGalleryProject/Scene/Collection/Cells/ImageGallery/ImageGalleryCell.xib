@@ -21,10 +21,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="295" height="344"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4jI-Ug-QKR">
-                                <rect key="frame" x="0.0" y="0.0" width="216.5" height="344"/>
+                                <rect key="frame" x="0.0" y="0.0" width="223" height="344"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qCz-pe-Hni">
-                                <rect key="frame" x="221.5" y="0.0" width="73.5" height="344"/>
+                                <rect key="frame" x="228" y="0.0" width="67" height="344"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="D0D-Y0-ejs">
                                     <size key="itemSize" width="128" height="128"/>
@@ -44,7 +44,7 @@
                     <constraint firstAttribute="trailing" secondItem="HzN-za-akt" secondAttribute="trailing" id="5zc-Lq-A9g"/>
                     <constraint firstItem="HzN-za-akt" firstAttribute="top" secondItem="Wx4-d4-tgq" secondAttribute="top" id="HsP-9a-RT2"/>
                     <constraint firstItem="HzN-za-akt" firstAttribute="leading" secondItem="Wx4-d4-tgq" secondAttribute="leading" id="nf9-qh-09c"/>
-                    <constraint firstItem="qCz-pe-Hni" firstAttribute="width" secondItem="Wx4-d4-tgq" secondAttribute="width" multiplier="1:4" id="zUx-td-SjE"/>
+                    <constraint firstItem="qCz-pe-Hni" firstAttribute="width" secondItem="Wx4-d4-tgq" secondAttribute="width" multiplier="1:4.4" id="zUx-td-SjE"/>
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="295" height="344"/>

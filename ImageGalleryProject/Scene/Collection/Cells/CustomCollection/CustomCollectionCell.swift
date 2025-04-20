@@ -42,15 +42,21 @@ private extension CustomCollectionCell {
   
   func refreshLabel() {
     guard viewModel.height > 10 else {
-      topLabel.text = ""
-      centerLabel.text = ""
-      bottomLabel.text = ""
+      topLabel.attributedText = nil
+      centerLabel.attributedText = nil
+      bottomLabel.attributedText = nil
       return
     }
 
     topLabel.attributedText = viewModel.topAttributedText
     centerLabel.attributedText = viewModel.centerAttributedText
     bottomLabel.attributedText = viewModel.bottomAttributedText
+    
+    if viewModel.isAutoShrink {
+      centerLabel.adjustsFontSizeToFitWidth = true
+      centerLabel.numberOfLines = 1
+      centerLabel.minimumScaleFactor = 0.5
+    }
   }
 }
 

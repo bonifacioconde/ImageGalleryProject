@@ -901,17 +901,17 @@
           "vAlign": "top"
         },
         "bottomLabelText": "and this label is top aligned. This label should also wrap three lines. The label above fits to the width of its cell and is also bold and italic.",
-        "cellHeight": 150,
+        "cellHeight": 130,
         "centerLabelStyles": {
           "bold": true,
-          "color": "#3514DC",
-          "italic": false,
-          "size": 2,
-          "textAlign": "left",
-          "underline": true,
-          "vAlign": "top"
+          "color": "#000000",
+          "italic": true,
+          "size": 0.9,
+          "textAlign": "center",
+          "underline": false,
+          "vAlign": "bottom"
         },
-        "centerLabelText": "",
+        "centerLabelText": "This cell should have two labels with this one being bottom aligned",
         "layout": "TwoLine",
         "topLabelStyles": {
           "bold": true,
@@ -922,7 +922,7 @@
           "underline": false,
           "vAlign": "bottom"
         },
-        "topLabelText": "This cell should have two labels with this one being bottom aligned"
+        "topLabelText": ""
       }
     },
     {
@@ -992,7 +992,7 @@
           "bold": false,
           "color": "#EBE7FF",
           "italic": false,
-          "size": -1,
+          "size": 1.5,
           "textAlign": "center",
           "underline": false,
           "vAlign": "middle"
